@@ -10,7 +10,7 @@ git clone git@github.com:marioBytes/git-hook-checklist.git
 # navigate to repo
 cd git-hook-checklist
 # copy hook to your projects hooks dir as a step in the git workflow
-cp git-hook-checklist/custom_hook.sh your-project/.git/hooks/pre-push
+cp git-hook-checklist/checklist-hook.sh your-project/.git/hooks/pre-push
 # navigate to your project
 cd your-project/.git/hooks
 # make hook executable
