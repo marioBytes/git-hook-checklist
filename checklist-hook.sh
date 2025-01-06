@@ -95,6 +95,7 @@ while true; do
   echo "• Enter 'c' to continue if all items are checked"
   echo "• Enter 'b' to bypass checklist"
   echo "• Enter 'q' to quit and cancel the push"
+  echo "Another command"
 
   read -p $'\nEnter command: ' cmd </dev/tty
 
@@ -112,7 +113,7 @@ while true; do
         exit 0
       else
         encourage_msg=$(get_encouraging_message)
-        echo -e "\n${YELLOW}⚠️ Please complete all checklist items before continuing. ${NC}"
+        echo -e "\n${YELLOW}⚠️ Please complete all checklist items before continuing.${NC}"
         read -n 1 -s -r -p "Press any key to continue..."
       fi
       ;;
