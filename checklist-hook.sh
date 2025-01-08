@@ -6,7 +6,6 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 PENDING_MARK="${YELLOW}•${NC}"
 
-# Using single array with delimiter ||| to separate item and state
 checklist=(
   "Reviewed all changes|||false"
   "Tested the code|||false"
@@ -114,7 +113,7 @@ while true; do
   read -p $'\nEnter command: ' cmd </dev/tty
 
   case $cmd in
-    [1-9])
+    [0-9])
       if [[ $cmd -le ${#checklist[@]} ]]; then
         toggle_item "$cmd"
       fi
